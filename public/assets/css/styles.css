@@ -1,0 +1,304 @@
+input[required] {
+    background-color: khaki !important;
+}
+select[required]~.select2-container--default .select2-selection--single { 
+    background-color: khaki !important;
+}
+
+/* STYLE TAB */
+.tabset>input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+}
+
+.tabset .tab-panel {
+    display: none;
+}
+
+.tabset>input:first-child:checked~.tab-panels>.tab-panel:first-child,
+.tabset>input:nth-child(3):checked~.tab-panels>.tab-panel:nth-child(2),
+.tabset>input:nth-child(5):checked~.tab-panels>.tab-panel:nth-child(3),
+.tabset>input:nth-child(7):checked~.tab-panels>.tab-panel:nth-child(4),
+.tabset>input:nth-child(9):checked~.tab-panels>.tab-panel:nth-child(5),
+.tabset>input:nth-child(11):checked~.tab-panels>.tab-panel:nth-child(6),
+.tabset>input:nth-child(13):checked~.tab-panels>.tab-panel:nth-child(7),
+.tabset>input:nth-child(15):checked~.tab-panels>.tab-panel:nth-child(8) {
+    display: block;
+}
+
+
+.tabset>label {
+    position: relative;
+    display: inline-block;
+    padding: 15px 15px 25px;
+    border: 1px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tabset>label::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    width: 22px;
+    height: 4px;
+    background: #8d8d8d;
+}
+
+.tabset>label:hover,
+.tabset>input:focus+label {
+    color: #5e72e4;
+}
+
+.tabset>label:hover::after,
+.tabset>input:focus+label::after,
+.tabset>input:checked+label::after {
+    background: #5e72e4;
+}
+
+.tabset>input:checked+label {
+    border-color: #ccc;
+    border-bottom: 1px solid #fff;
+    margin-bottom: -1px;
+}
+
+.tab-panel {
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* .tabset {
+    max-width: 65em;
+} */
+/* END STYLE TAB */
+
+/* STYLE HEIGHT SELECT2 */
+.select2-selection__rendered {
+    line-height: 31px !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 35px !important;
+}
+
+.select2-selection__arrow {
+    height: 34px !important;
+}
+/* END STYLE */
+
+/* my table  */
+.table-pagination {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+.my-tableview td.title-on-first {
+    width: 25% !important;
+}
+
+.my-tableview td.item-of-table {
+    width: 5% !important
+}
+
+.my-tableview td.item-of-table-lg {
+    width: 30% !important;
+}
+
+table.my-tableview {
+    border-spacing: 0;
+}
+
+.my-tableview {
+    width: 100%;
+}
+
+.my-tableview thead tr th, 
+.my-tableview tfoot tr th {
+    padding: 6px 10px 6px;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.my-tableview thead{
+    background-color: var(--bs-primary);
+    color: #fff;
+}
+
+.dataTables_wrapper .dataTables_paginate .page-item.active .page-link{
+background: var(--bs-primary)!important;
+}
+
+
+.my-tableview thead tr th {
+    text-transform: capitalize;
+}
+
+.my-tableview tbody tr td {
+    text-transform: uppercase;
+}
+
+/* table.my-tableview tr th,
+table.my-tableview tr td
+{
+  border: 0.5px solid rgba(34, 32, 32, 0.65)!important;
+} 
+*/
+
+.my-tableview tbody td {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 6px !important;
+    padding-right: 0px !important;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .my-tableview.my-table-striped tbody tr:nth-of-type(odd) {
+    background-color: #d2edf9;
+} */
+
+.my-tableview.my-table-striped tbody tr:nth-of-type(odd):hover,
+.my-tableview.my-table-striped tbody tr:nth-of-type(even):hover {
+    background-color: #ebe1e1;
+}
+
+.dataTables_scrollBody thead tr {
+    visibility: collapse;
+}
+
+.highlight {
+    background-color: #ff9999 !important;
+    /* color: var(--natural-dark) !important; */
+}
+
+.my-tableview.td-first-title tbody td:first-child {
+    text-transform: capitalize;
+    width: 15%;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.my-tableview.td-first-title tbody td:nth-child(2) {
+    text-transform: capitalize;
+    width: 1%;
+}
+
+/* /my table */
+/* modal table  */
+.modal-tableview td.title-on-first {
+    width: 25% !important;
+}
+
+.modal-tableview td.item-of-table {
+    width: 5% !important
+}
+
+.modal-tableview td.item-of-table-lg {
+    width: 30% !important;
+}
+
+table.modal-tableview {
+    border-spacing: 0;
+}
+
+.modal-tableview {
+    width: 100%;
+}
+
+.modal-tableview thead tr th, 
+.modal-tableview tfoot tr th {
+    /* padding: 6px 40px 6px !important; */
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.modal-tableview thead{
+    background-color: var(--bs-primary);
+    color: #fff;
+}
+
+.modal-tableview thead tr th {
+    text-transform: capitalize;
+}
+
+.modal-tableview tbody tr td {
+    text-transform: uppercase;
+}
+
+.modal-tableview tbody td {
+    /* padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 6px !important;
+    padding-right: 0px !important; */
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.modal-tableview.modal-table-striped tbody tr:nth-of-type(odd):hover,
+.modal-tableview.modal-table-striped tbody tr:nth-of-type(even):hover {
+    background-color: #ebe1e1;
+}
+
+.dataTables_scrollBody thead tr {
+    visibility: collapse;
+}
+
+
+.modal-tableview.td-first-title tbody td:first-child {
+    text-transform: capitalize;
+    width: 15%;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.modal-tableview.td-first-title tbody td:nth-child(2) {
+    text-transform: capitalize;
+    width: 1%;
+}
+/* END MODAL TABLE */
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: var(--bs-primary);
+}
+
+@-moz-document url-prefix() { /* Disable scrollbar Firefox */
+    html{
+      scrollbar-width: none;
+    }
+    
+    .dataTables_scrollBody{
+      scrollbar-width: none;
+    }
+    
+  }
+
+  /* .my-card { min-height: 560px; } */
